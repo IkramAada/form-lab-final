@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-heart"></i>
+        <h1>Regístrate</h1>
+        <p>Crea una cuenta para que tengas acceso a todos los contenidos de nuestra plataforma!</p>
+      </div>
+      <form action="../backend/form.php" method="post" onsubmit="return validateFrom()">
+        <div class="title">
+          <h2>Regístrate aquí &nbsp;</h2>
+          <i class="fas fa-pencil-alt"></i> 
+        </div>
+        <div class="info">
+          <div class="input-container">
+            <input type="text" name="nombre" placeholder="Nombre"><br>
+            <small id="nameMsg"></small><br>
+          </div>
+          <div class="input-container">
+            <input type="text" name="p_apellido" placeholder="Primero Apellido"><br>
+            <small id="papMsg"></small><br>
+          </div>
+          <div class="input-container">
+            <input type="text" name="s_apellido" placeholder="Segundo Apellido"><br>
+            <small id="sapMsg"></small><br>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" placeholder="Correo electrónico"><br>
+            <small id="emailMsg"></small><br>
+          </div>
+          <div class="input-container">
+            <input type="text" name="usuario" placeholder="Usuario"><br>
+            <small id="userMsg"></small><br>
+          </div>
+          <div class="input-container">
+            <input type="password" name="contraseña" placeholder="Contraseña"><br>
+            <small id="passwdMsg"></small><br>
+          </div>
+        </div>
+        <button type="submit">Registrame</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
